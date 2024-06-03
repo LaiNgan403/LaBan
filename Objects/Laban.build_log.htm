@@ -1,0 +1,136 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ngan Lai, UET, LIC=----
+ 
+Tool Versions:
+Toolchain:       MDK-Lite  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin
+C Compiler:      Armcc.exe V5.06 update 7 (build 960)
+Assembler:       Armasm.exe V5.06 update 7 (build 960)
+Linker/Locator:  ArmLink.exe V5.06 update 7 (build 960)
+Library Manager: ArmAr.exe V5.06 update 7 (build 960)
+Hex Converter:   FromElf.exe V5.06 update 7 (build 960)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      PEMicro\Pemicro_ArmCortexInterface.dll V1.3.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\NewFolder\BTLnhung\Laban.uvprojx
+Project File Date:  06/04/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARM_Compiler_5.06u7\Bin'
+Build target 'Target 1'
+compiling delay.c...
+delay.h(3): warning:  #1295-D: Deprecated declaration Init_Systick - give arg types
+  void Init_Systick();
+delay.h(4): warning:  #1295-D: Deprecated declaration Shutdown - give arg types
+  void Shutdown();
+delay.h(5): warning:  #1-D: last line of file ends without a newline
+  void Delay (uint32_t TICK);
+delay.c(12): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_SetPriority(-1,15);
+delay.c(21): error:  #20: identifier "operation" is undefined
+  	if (operation == 0) {
+delay.c(45): warning:  #1-D: last line of file ends without a newline
+  } 
+delay.c: 5 warnings, 1 error
+compiling led.c...
+led.h(3): warning:  #1295-D: Deprecated declaration led_Init - give arg types
+  void led_Init();
+led.h(4): warning:  #1295-D: Deprecated declaration led_Green_Blink - give arg types
+  void led_Green_Blink();
+led.h(5): warning:  #1295-D: Deprecated declaration led_Red_Blink - give arg types
+  void led_Red_Blink();
+led.h(6): warning:  #1295-D: Deprecated declaration led_Green_Off - give arg types
+  void led_Green_Off();
+led.h(7): warning:  #1-D: last line of file ends without a newline
+  void led_Red_Off();
+led.h(7): warning:  #1295-D: Deprecated declaration led_Red_Off - give arg types
+  void led_Red_Off();
+delay.h(3): warning:  #1295-D: Deprecated declaration Init_Systick - give arg types
+  void Init_Systick();
+delay.h(4): warning:  #1295-D: Deprecated declaration Shutdown - give arg types
+  void Shutdown();
+delay.h(5): warning:  #1-D: last line of file ends without a newline
+  void Delay (uint32_t TICK);
+led.c: 9 warnings, 0 errors
+compiling switch.c...
+switch.h(5): warning:  #1-D: last line of file ends without a newline
+  void switch_Init();
+switch.h(5): warning:  #1295-D: Deprecated declaration switch_Init - give arg types
+  void switch_Init();
+switch.c(27): warning:  #188-D: enumerated type mixed with another type
+  	NVIC_EnableIRQ(31);
+switch.c: 3 warnings, 0 errors
+compiling uart.c...
+uart.h(10): warning:  #1-D: last line of file ends without a newline
+  void UART_SendFloat(float data);
+uart.c(80): warning:  #1-D: last line of file ends without a newline
+  }
+uart.c: 2 warnings, 0 errors
+compiling main.c...
+delay.h(3): warning:  #1295-D: Deprecated declaration Init_Systick - give arg types
+  void Init_Systick();
+delay.h(4): warning:  #1295-D: Deprecated declaration Shutdown - give arg types
+  void Shutdown();
+delay.h(5): warning:  #1-D: last line of file ends without a newline
+  void Delay (uint32_t TICK);
+uart.h(10): warning:  #1-D: last line of file ends without a newline
+  void UART_SendFloat(float data);
+mag.h(8): warning:  #1295-D: Deprecated declaration mag_Init - give arg types
+  void mag_Init();
+mag.h(9): warning:  #1-D: last line of file ends without a newline
+  mag3110 mag_read();
+mag.h(9): warning:  #1295-D: Deprecated declaration mag_read - give arg types
+  mag3110 mag_read();
+main.c(15): warning:  #223-D: function "led_Init" declared implicitly
+  	led_Init();
+main.c(16): warning:  #223-D: function "switch_Init" declared implicitly
+  	switch_Init();
+main.c(24): warning:  #1-D: last line of file ends without a newline
+  }
+main.c: 10 warnings, 0 errors
+".\Objects\Laban.axf" - 1 Error(s), 29 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: NXP
+                http://mcuxpresso.nxp.com/cmsis_pack/repo/NXP.MKL46Z4_DFP.10.0.3.pack
+                NXP::MKL46Z4_DFP@10.0.3
+                Device Family Pack for MKL46Z4
+   * Component: Startup Version: 1.0.0
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/Device/MKL46Z256VLL4
+  ./RTE/_Target_1
+  C:/Users/HP/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+
+   * Component: NXP::Device:Startup@1.0.0
+      Source file:   arm/startup_MKL46Z4.s
+      Include file:  system_MKL46Z4.h
+      Source file:   system_MKL46Z4.c
+      Include file:  MKL46Z4_features.h
+      Include file:  MKL46Z4.h
+      Include file:  fsl_device_registers.h
+Target not created.
+Build Time Elapsed:  00:00:01
+</pre>
+</body>
+</html>
